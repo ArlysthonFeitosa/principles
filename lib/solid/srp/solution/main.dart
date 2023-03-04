@@ -1,9 +1,9 @@
 import 'dart:developer';
 
-import 'package:principles/solid/srp/problem/car.dart';
+import 'package:principles/solid/srp/solution/car.dart';
 
-///Problem: The program was suposed to just start the car engine,
-///but the lights are starting too
+
+///Result: Now the lights will turn on/off just when call the method
 ///Note: run it in debug mode
 
 void main() {
@@ -15,5 +15,8 @@ void main() {
   car.startEngine();
 
   log('engine: ${car.isOn.toString()}');
+  log('light: ${car.isLightOn.toString()}');
+
+  car.turnLightOn();
   log('light: ${car.isLightOn.toString()}');
 }
